@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker: # See https://docs.docker.com/get-started/#docker-concepts if you are new to Docker.
+      - image: debian:stretch
+    steps:
+      - dependency
+      - run: 
+      sudo apt-get update
+      sudo apt-get install fsharp
