@@ -13,5 +13,6 @@ jobs:
           command: date
       - run:
           name: Install F#
-          command: sudo apt-get update
+          command: 
+            sudo apt-get update
             sudo apt-get install fsharp
