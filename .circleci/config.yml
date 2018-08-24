@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: dockerfile/ubuntu
+      - image: circleci/python:3.7.0-node-browsers
     steps:
       - checkout
       - run:
