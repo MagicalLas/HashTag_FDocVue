@@ -14,8 +14,10 @@ jobs:
       - run:
           name: Install F#
           command: |
+          
             sudo apt-get update
             sudo apt-get install fsharp
+            sudo apt-get wine
 
       - run:
           name: F# excute
@@ -23,5 +25,6 @@ jobs:
             cd source
             fsharpc main.fs
             ls
-            
+            chmod +x main.exe
+            wine main.exe
       
