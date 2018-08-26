@@ -22,4 +22,6 @@ jobs:
           command: |
             cd source
             fsharpc main.fs
+            ls
+            
       
