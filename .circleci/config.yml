@@ -17,3 +17,8 @@ jobs:
             sudo apt-get update
             sudo apt-get install fsharp
             sudo apt-get install mono-complete fsharp
+      - run:
+          name: F# excute
+          command: |
+            dotnet new console -lang F# -o src/App
+      
