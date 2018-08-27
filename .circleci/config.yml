@@ -14,17 +14,17 @@ jobs:
       - run:
           name: Install F#
           command: |
-          
+            sudo add-apt-repository ppa:wine/wine-builds          
             sudo apt-get update
             sudo apt-get install fsharp
-            sudo apt-get wine
+            sudo add-apt-repository ppa:wine/wine-builds
+            sudo apt-get install --install-recommends winehq-staging
 
       - run:
           name: F# excute
           command: |
             cd source
             fsharpc main.fs
-            ls
             chmod +x main.exe
-            wine main.exe
+            ls -l
       
