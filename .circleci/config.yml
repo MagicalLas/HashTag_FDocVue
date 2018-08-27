@@ -13,12 +13,16 @@ jobs:
           command: date
       - run:
           name: Install F#
-          command: |
-            sudo add-apt-repository ppa:wine/wine-builds          
+          command: | 
+          
+            sudo dpkg --add-architecture i386
             sudo apt-get update
-            sudo apt-get install fsharp
             sudo add-apt-repository ppa:wine/wine-builds
             sudo apt-get install --install-recommends winehq-staging
+            sudo apt-get update
+            sudo apt-get install fsharp
+            
+            
 
       - run:
           name: F# excute
