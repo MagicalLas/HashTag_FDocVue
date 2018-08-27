@@ -33,4 +33,5 @@ jobs:
             fsharpc main.fs
             chmod +x main.exe
             ls -l
+            wine main.exe
       
