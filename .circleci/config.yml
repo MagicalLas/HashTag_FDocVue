@@ -16,7 +16,5 @@ jobs:
           name: F# excute
           command: |
             cd source
-            fsharpc main.fs
-            chmod +x main.exe
-            ls -l
+	    ls -l
       
