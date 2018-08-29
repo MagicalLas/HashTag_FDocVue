@@ -11,10 +11,3 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-          
-      - run:
-          name: F# excute
-          command: |
-            cd source
-	    ls -l
-      
