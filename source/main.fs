@@ -1,7 +1,8 @@
-open System
+module helloworld
 
+let functionss x = x + 10
 [<EntryPoint>]
 let main argv = 
-    printfn "Hello World" 
-    Console.ReadLine() |> ignore
+    let result = functionss 1234
+    printfn "result is %d." result
     0
